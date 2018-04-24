@@ -1,1 +1,4 @@
-theme: jekyll-theme-midnight
+title: Myranth
+email: myranth336@gmail.com
+include: ['_pages']
+baseurl: ""
