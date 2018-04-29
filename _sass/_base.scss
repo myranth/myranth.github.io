@@ -5,7 +5,28 @@ $colour4: #2a3842;
 $colour5: #19222a;
 $colour6: #0c1217;
 
+$linkColour: #8d9ac3;
+$linkColourHover: #6e7da7;
+
+a {
+	color: $linkColour;
+
+	&:hover {
+		font-style: normal;
+		color: $linkColourHover;
+	}
+}
+
+.navLink {
+	font-size: 1.4em;
+	display: block;
+	margin: 0px;
+	padding: 10px 20px 10px 20px;
+	float: right;
+}
+
 body {
 	background-color: $colour6;
 	color: $colour1;
+	font-family: Lato;
 }
