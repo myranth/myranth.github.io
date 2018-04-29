@@ -1,4 +1,7 @@
 title: Myranth
 email: myranth336@gmail.com
-include: ['_pages']
+include: ['_pages', '_projects']
 baseurl: ""
+markdown: kramdown
+sass:
+  sass_dir: _sass
