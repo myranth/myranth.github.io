@@ -4,7 +4,4 @@ title: About
 permalink: /about/
 ---
 
-About content goes here.
-
-* A list item
-* Another list item
+I might just end up using the home page.
