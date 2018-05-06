@@ -1,0 +1,35 @@
+- title: "Cavey Jones"
+  tags: "Java"
+  date: "June 2015"
+  description: >
+    My first attempt at coding a game from scratch. 
+    It is a coin-collecting platformer with tricky jumps and things designed to kill you, 
+    inspired by some older platformers along with more recent, difficult ones.
+  previewImage: "/assets/img/previewCavey.png"
+  link: "/projects/cavey-jones/"
+
+- title: "Lands of Terin"
+  tags: "C++, SDL, OpenGL"
+  date: "2016-2017"
+  description: >
+    Program that procedurally generates and renders 3D landscapes with various biomes in real time. 
+    Features include varying LOD (Level of Detail) terrain, reflective water, particles, and shadow mapping.
+  previewImage: "/assets/img/previewTerin.png"
+  link: "/projects/terin/"
+
+- title: "Cluster Chord"
+  tags: "Python, Keras"
+  date: "2017-2018"
+  description: >
+    Software made for my fourth year group project, which was an investigation into the generation of music (in MIDI format) via the use
+    of deep, recurrent neural networks.
+  previewImage: "/assets/img/previewCC.png"
+  link: "/projects/cluster-chord/"
+
+- title: "Pew pew"
+  tags: "C++, SFML"
+  date: "May 2018"
+  description: >
+    I'm still making this tbf
+  previewImage: "/assets/img/previewTerin.png"
+  link: "/projects/pew-pew/"

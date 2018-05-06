@@ -1,3 +1,3 @@
 # myranth.github.io
 
-I suck at jekyll
+Portfolio website of Phil Taylor, man with long hair who likes computers and music.

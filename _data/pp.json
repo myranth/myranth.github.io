@@ -1,0 +1,10 @@
+{
+    "caveyJones": {
+        "title": "Cavey Jones",
+        "tags": ["Java", "A fake tag"]
+    },
+    "landsOfTerin": {
+        "title": "Lands of Terin",
+        "tags": ["C++", "SDL", "OpenGL"]
+    }
+}

@@ -7,6 +7,8 @@ $colour6: #0c1217;
 
 $linkColour: #8d9ac3;
 $linkColourHover: #6e7da7;
+$buttonColour: #2a3862;
+$buttonColourHover: #3f4e78;
 
 a {
 	color: $linkColour;
@@ -29,4 +31,18 @@ body {
 	background-color: $colour6;
 	color: $colour1;
 	font-family: Lato;
+}
+
+.btn-primary {
+	background-color: $buttonColour;
+	border-color: $buttonColour;
+
+	&:hover {
+		background-color: $buttonColourHover;
+		border-color: $buttonColour;
+	}
+}
+
+code {
+	color: $colour2;
 }
