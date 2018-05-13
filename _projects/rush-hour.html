@@ -1,0 +1,62 @@
+---
+layout: project
+title: Rush Hour Solver
+permalink: /projects/rush-hour
+---
+
+<div class="row">
+    <div class="col-12">
+        <h2>About</h2>
+        <p>
+            <a href="https://www.thinkfun.com/products/rush-hour/">Rush Hour</a> is a sliding puzzle game which
+            consists of a 6x6 board of cars oriented both vertically and horizontally. The goal is to get the red car to the exit.
+            This particular assignment asked us to write a program that would find solutions to puzzles (stored as text files) with the
+            smallest number of steps (a step being moving one car one space) possible.
+        </p>
+        <p>
+            We were also asked to perform extensions beyond the base game:
+            <ul>
+                <li>Adding holes i.e. spaces that cars cannot move through</li>
+                <li>Minimising number of moves rather than steps (a move being moving one car any number of spaces)</li>
+                <li>Giving a 'weight' to horizontal and vertical movements, and then minimising the total overall solution weight</li>
+            </ul>
+        </p>
+        <p>
+            This was done by using Microsoft's Z3 library, which can solve propositional formulas. The challenge of the task was encoding the
+            game as a formula containing variables that captured the state of the board and only allowed valid movements, in such a way that
+            the formula had a satisfying assignment if and only if the original puzzle had a solution. 
+        </p>
+        <p>
+            I am trying to be deliberately vague about exactly how this works to avoid giving answers away to future students. It was quite a fun task,
+            and throughout the module we wrote solvers with this method for simpler games like sudoku (a good starting point should you want to try yourself).
+        </p>
+
+        <h4>Sample solution</h4>
+        <div class="row">
+            <div class="col-3">
+                <code>
+                    SIZE 6, H 6, V 1<br/>
+                    -1,0,7,10,11,12<br/>
+                    0,0,8,3,4,7<br/>
+                    5,6,9,0,0,8<br/>
+                    -1,0,0,0,1,9<br/>
+                    0,1,3,4,2,0<br/>
+                    0,2,0,0,3,4<br/>
+                </code>
+            </div>
+            <div class="col-9">
+                Because we were asked to use Python, I used matplotlib to output the solutions graphically. Here is an example input file with
+                a minimum weight solution. When the red car gets all the way to the right, this is considered complete.<br/>
+                <code>
+                    -1 = hole<br/>
+                    5,6 = red car<br/>
+                    1,2 and 7,8,9 = vertical cars<br/>
+                    3,4 and 10,11,12 = horizontal cars<br/>
+                </code>
+            </div>
+        </div>
+        <div class="text-center">
+            <img style="padding: 10px;" class="img-fluid" src="/assets/img/rushhour/sampleSolution.png">
+        </div>
+    </div>
+</div>

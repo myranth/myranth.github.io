@@ -8,94 +8,29 @@ permalink: /academic-projects
     A brief look at some of the work I did during my four years of University. As these were mostly for assignments, I will not provide code publicly.
 </p>
 
+{% for project in site.data.academic_projects %}
 <div class="row">
     <div class="col-12">
         <div class="projectPreview">
             <div class="row">
                 <div class="col-8">
-                    <h2 class="projectTitle">Texture Generation</h2>
-                    <span class="projectTagline">C++, SDL, OpenGL</span>
+                    <h2 class="projectTitle">{{ project.title }}</h2>
+                    <span class="projectTagline">{{ project.tags }}</span>
                     <p>
-                        Small piece of software done as a research project that generates textures from applying frequency-domain filters to a noisy image.
+                        {{ project.description }}
                     </p>
                     <p>
-                        <a class="btn btn-primary" href="/projects/texture-gen/">View</a>
+                        <a class="btn btn-primary" href="{{ project.link }}">View</a>
                     </p>
                 </div>
                 <div class="col-4">
-                    <img class="img-fluid previewImage" src="/assets/img/previewTextureGen.png"/>
+                    <img class="img-fluid previewImage" src="{{ project.previewImage }}"/>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-<div class="row">
-    <div class="col-12">
-        <div class="projectPreview">
-            <div class="row">
-                <div class="col-8">
-                    <h2 class="projectTitle">Rush Hour Solver</h2>
-                    <span class="projectTagline">Python, Z3</span>
-                    <p>
-                        Solver for the game 'Rush Hour,' a sliding puzzle consisting of different sized 'cars' that move vertically and horizontally, where the goal
-                        is to get one specific car across the board to the exit.
-                    </p>
-                    <p>
-                        <a class="btn btn-primary" href="/projects/cavey-jones/">View</a>
-                    </p>
-                </div>
-                <div class="col-4">
-                    <img class="img-fluid previewImage" src="/assets/img/previewCavey.png"/>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-12">
-        <div class="projectPreview">
-            <div class="row">
-                <div class="col-8">
-                    <h2 class="projectTitle">3D Breakout</h2>
-                    <span class="projectTagline">C++, FreeGLUT, OpenGL</span>
-                    <p>
-                        The game of Breakout upgraded to 3D, including a few Nintendo-themed levels.
-                    </p>
-                    <p>
-                        <a class="btn btn-primary" href="/projects/3d-breakout/">View</a>
-                    </p>
-                </div>
-                <div class="col-4">
-                    <img class="img-fluid previewImage" src="/assets/img/previewBreakout.png"/>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-12">
-        <div class="projectPreview">
-            <div class="row">
-                <div class="col-8">
-                    <h2 class="projectTitle">Object recognition</h2>
-                    <span class="projectTagline">Matlab</span>
-                    <p>
-                        Matlab program that recognises known objects (food labels in this case) in a video by matching SURF keypoints.
-                    </p>
-                    <p>
-                        <a class="btn btn-primary" href="/projects/cavey-jones/">View</a>
-                    </p>
-                </div>
-                <div class="col-4">
-                    <img class="img-fluid previewImage" src="/assets/img/previewCavey.png"/>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+{% endfor %}
 
 <p>Other projects include a Lua parser written in Python, a Lego Mindstorms robot programmed with LeJOS to navigate a grid with paths blocked by obstacles,
     an investigation into predicting the outcomes of DotA 2 matches, and a client-server software suite to detect fraudulent data in a (made-up) stream of stock market

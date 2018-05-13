@@ -1,0 +1,33 @@
+- title: "Texture Generation"
+  tags: "C++, SDL, OpenGL"
+  date: "June 2016"
+  description: >
+    Small piece of software done as a research project that generates textures from applying 
+    frequency-domain filters to a noisy image.
+  previewImage: "/assets/img/previewTextureGen.png"
+  link: "/projects/texture-gen"
+
+- title: "Rush Hour Solver"
+  tags: "Python, Z3"
+  date: "Jan 2017"
+  description: >
+    Solver for the game 'Rush Hour,' a sliding puzzle consisting of different sized 'cars' that move vertically 
+    and horizontally, where the goal is to get one specific car across the board to the exit.
+  previewImage: "/assets/img/previewRushHour.png"
+  link: "/projects/rush-hour"
+
+- title: "3D Breakout"
+  tags: "C++, FreeGLUT, OpenGL"
+  date: "Jan 2016"
+  description: >
+    The game of Breakout upgraded to 3D, including a few Nintendo-themed levels.
+  previewImage: "/assets/img/previewBreakout.png"
+  link: "/projects/3d-breakout"
+
+- title: "Object recognition"
+  tags: "Matlab"
+  date: "Jan 2017"
+  description: >
+    Matlab program that recognises known objects (food labels in this case) in a video by matching SURF keypoints.
+  previewImage: "/assets/img/previewObjectDetection.png"
+  link: "/projects/object-recognition"

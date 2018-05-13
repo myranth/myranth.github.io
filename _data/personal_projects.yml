@@ -25,11 +25,3 @@
     of deep, recurrent neural networks.
   previewImage: "/assets/img/previewCC.png"
   link: "/projects/cluster-chord/"
-
-- title: "Pew pew"
-  tags: "C++, SFML"
-  date: "May 2018"
-  description: >
-    I'm still making this tbf
-  previewImage: "/assets/img/previewTerin.png"
-  link: "/projects/pew-pew/"
