@@ -6,7 +6,7 @@
     It is a coin-collecting platformer with tricky jumps and things designed to kill you, 
     inspired by some older platformers along with more recent, difficult ones.
   previewImage: "/assets/img/previewCavey.png"
-  link: "/projects/cavey-jones/"
+  link: "/projects/cavey-jones"
 
 - title: "Lands of Terin"
   tags: "C++, SDL, OpenGL"
@@ -15,7 +15,7 @@
     Program that procedurally generates and renders 3D landscapes with various biomes in real time. 
     Features include varying LOD (Level of Detail) terrain, reflective water, particles, and shadow mapping.
   previewImage: "/assets/img/previewTerin.png"
-  link: "/projects/terin/"
+  link: "/projects/terin"
 
 - title: "Cluster Chord"
   tags: "Python, Keras"
@@ -24,4 +24,4 @@
     Software made for my fourth year group project, which was an investigation into the generation of music (in MIDI format) via the use
     of deep, recurrent neural networks.
   previewImage: "/assets/img/previewCC.png"
-  link: "/projects/cluster-chord/"
+  link: "/projects/cluster-chord"

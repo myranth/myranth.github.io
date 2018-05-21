@@ -8,6 +8,29 @@ permalink: /projects/cluster-chord
     <div class="col-12">
         <h2>About</h2>
         <p>
-            </p>
+            Cluster Chord was a 5-person project that investigated whether neural networks (which are being used for, 
+            well, basically everything these days) were able to generate music in MIDI format. In particular we looked
+            at RNNs (Recurrent Neural Networks) that used so-called GRU and LSTM cells. We were able to produce simple music
+            that stayed within a key signature and sounded like it could have been composed by a human, but was limited to playing
+            one note at a time.
+        </p>
+
+        <h4>Sample music</h4>
+        <p>
+            You can download a small collection of MIDI files <a href="/assets/downloads/sampleMIDIs.zip">here</a>.
+
+        <h4>Method</h4>
+        <p>
+            Neural networks are often used as classifiers i.e. they are trained to try and predict whether a piece of data belongs
+            to one of various classes. For this task, we had 88 classes corresponding to the 88 notes on a grand piano. Each
+            piece of training data consisted of 8 bars of music split into sixteenth notes; the class or label was the note being played
+            the very next sixteenth along.
+        </p>
+        <p>
+            By taking a database of MIDI files and splitting them into as many labelled 8 bar sections as possible, we had about 420,000 individual
+            training samples. This allowed us to create a network that could 'guess' the next note. Adding this predicted note and then
+            'sliding' the 8-bar window along to include it means you can then predict the note after that, and so on. In other words,
+            the network can indefinitely generate new notes, eventually based off of music it has already written itself.
+        </p>
     </div>
 </div>

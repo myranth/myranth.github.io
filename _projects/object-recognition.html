@@ -8,7 +8,31 @@ permalink: /projects/object-recognition
     <div class="col-12">
         <h2>About</h2>
         <p>
-            TODO (because Matlab isn't working right now)
+            This was an assignment for an image and video analysis module. The task was to create a program that would
+            read a video, and then play it back while highlighting which objects were visible (from a set of known objects).
+            You can see the program working in the video below.
         </p>
+
+        <p>
+            Recognising objects is actually quite straightforward! It can be done by extracting SURF keypoints at each frame in the video
+            and then finding the closest matches to the SURF keypoints on the objects. A SURF keypoint is a 'feature' or 'point
+            of interest' in an image (often things like corners/edges) that is defined by a descriptor, which describes the
+            keypoint's orientation and some information about pixels nearby. If the majority of an object's descriptors match
+            the descriptors of the current video frame, it means the object is probably visible.
+        </p>
+
+        <p>
+            The SURF algorithm is patented, but if you want you can read about how it works in the 
+            <a href="http://www.vision.ee.ethz.ch/~surf/eccv06.pdf">original paper</a>. It is invariant to rotation and scale; the video
+            below shows that objects can be recognised regardless of their angle or how close to the camera they are.
+        </p>
+
+        <div class="row">
+            <div class="col-10 offset-1">
+                <div class="embed-responsive embed-responsive-16by9 videoPreview">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/EfErD2ZHBVQ" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
